@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# HUS MOTORS Website
+# Sitemap will be added once the production URL is confirmed.
