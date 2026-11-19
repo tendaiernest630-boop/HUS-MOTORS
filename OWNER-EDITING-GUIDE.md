@@ -21,7 +21,7 @@ You have two convenient ways to update vehicle stock:
 
 ### Method A — Using the Visual Owner Portal (`owner.html`) ⭐ (Recommended)
 
-1. Open `owner.html` in your web browser (or navigate to `https://husmotors.co.zw/owner.html` or your GitHub Pages URL).
+1. Open `owner.html` in your web browser (or navigate to `https://pridetakudzwa74.github.io/owner.html` or your current live URL).
 2. Enter your Owner Passcode (default: **`2630`**).
 3. On the dashboard, you can:
    - **Change Availability:** Use the dropdown on any vehicle to toggle between **Available**, **Reserved / In Transit**, or **Sold**.
