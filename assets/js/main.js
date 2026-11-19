@@ -515,7 +515,7 @@
         lines.push("Details / Message: " + data.message);
       }
       lines.push("────────────────────────");
-      lines.push("Sent via husmotors.co.zw");
+      lines.push("Sent via HUS MOTORS (pridetakudzwa74.github.io)");
       return lines.join("\n");
     }
 

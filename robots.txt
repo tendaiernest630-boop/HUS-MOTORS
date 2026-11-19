@@ -4,4 +4,4 @@ Disallow: /owner.html
 Disallow: /scratch/
 
 # Sitemap location
-Sitemap: https://husmotors.co.zw/sitemap.xml
+Sitemap: https://pridetakudzwa74.github.io/sitemap.xml
