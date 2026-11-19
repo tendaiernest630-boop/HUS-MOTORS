@@ -138,7 +138,7 @@ Once you purchase `husmotors.co.zw` from your registrar:
    - `185.199.110.153`
    - `185.199.111.153`
 2. Add a **CNAME Record** for `www` pointing to:
-   `tendaiernest630-boop.github.io`
+   `pridetakudzwa74.github.io` (or your active GitHub Pages username)
 3. In your GitHub repository:
    - Create a file in the root folder named `CNAME`.
    - Put `husmotors.co.zw` on the first line and save.
