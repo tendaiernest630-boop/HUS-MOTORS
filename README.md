@@ -1,88 +1,101 @@
-# HUS MOTORS — Website
+# HUS MOTORS — Professional Automotive Website
 
-A professional automotive website for **HUS MOTORS**, built as a static site for GitHub Pages.
+Official website for **HUS MOTORS**, an established Zimbabwean automotive business offering vehicle sales, cross-border vehicle shipping and transportation, private vehicle selling assistance, roadside towing and recovery, and original motor spares.
 
-## What Is This?
+Built for GitHub Pages with zero external dependencies, rapid loading speed, mobile-first design, and seamless WhatsApp integration.
 
-A complete, single-page website presenting HUS MOTORS' automotive services:
+---
 
-- New & Used Original Motor Spares
-- Accident-Damaged Vehicle Purchases
-- Engine Rebuilding & Repairs
-- Motorcycle Servicing
-- Key Programming
-- Air-Conditioning Refuelling
-- Battery Charging
+## Key Features
+
+- **The 4 Core Pillars:**
+  1. **Vehicle Sales** — Verified, clean everyday market inventory (sedans, hatchbacks, family wagons, SUVs, double-cab pickups).
+  2. **Vehicle Shipping & Transportation** — Regional port transit (Durban, Walvis Bay, Beira) to Harare/Bulawayo and vehicle logistics.
+  3. **Help Selling Your Car** — Assisting vehicle owners to market and sell their cars to verified buyers at fair market value.
+  4. **Towing & Roadside Recovery** — Prompt flatbed recovery and transport for breakdowns and accident-damaged vehicles.
+- **Secondary Automotive Capabilities:**
+  - Tested new & used original motor spares.
+  - Engine rebuilding & diagnostics.
+  - Commercial & private motorcycle servicing.
+  - Vehicle transponder key programming, AC refuelling & battery diagnostics.
+- **Interactive Vehicle Showroom (`#vehicles`):**
+  - Category filters: All, Sedans, Double-Cabs, SUVs, Hatchbacks, Station Wagons.
+  - Vehicle details modal popup with detailed specifications and equipment lists.
+  - Pre-filled WhatsApp buttons that automatically cite the vehicle name, year, and price.
+- **Visual Owner Vehicle Manager (`owner.html`):**
+  - Private browser-based dashboard to add, edit, price, and mark vehicles as Available, Reserved, or Sold.
+  - 1-click code exporter & downloader to update `src/data/vehicles.js`.
+- **Fast Smart Enquiry Form:**
+  - Client-side validation with zero data exposure.
+  - Instant pre-filled sending via WhatsApp or Email.
+- **Performance & Media Optimization:**
+  - WebP images with progressive JPEG fallbacks.
+  - Commercial-use automotive photography reflecting real Zimbabwean and African vehicle environments.
+  - Accessible WCAG-compliant color contrast and keyboard navigation.
+
+---
 
 ## Tech Stack
 
-- **HTML5** — semantic, accessible markup
-- **CSS3** — custom design system, no frameworks
-- **Vanilla JavaScript** — zero dependencies, no tracking
-- **GitHub Pages** — free static hosting
+- **HTML5** — Semantic, accessible markup with Schema.org `AutoDealer` structured data.
+- **CSS3** — Custom responsive design system with dark carbon and warm amber/gold aesthetic.
+- **Vanilla JavaScript** — High-performance, zero dependencies, zero tracking, zero bloat.
+- **Hosting** — GitHub Pages (static, SSL/HTTPS enabled).
+
+---
 
 ## Project Structure
 
 ```
 HUS MOTORS/
-├── index.html                  ← The website
+├── index.html                   ← Main website
+├── owner.html                   ← Private Owner Vehicle Management Portal
+├── sitemap.xml                  ← Search engine sitemap
+├── robots.txt                   ← Search crawler instructions
+├── .nojekyll                    ← GitHub Pages bypass Jekyll
 ├── src/
 │   └── data/
-│       └── business.js         ← ⭐ EDIT THIS to update business info
+│       ├── business.js          ← Business phone, email, address, and service details
+│       └── vehicles.js          ← Vehicle inventory listings, pricing, and specs
 ├── assets/
 │   ├── css/
-│   │   └── style.css           ← Design system
+│   │   └── style.css            ← Design system & responsive layout
 │   ├── js/
-│   │   └── main.js             ← Site functionality
+│   │   └── main.js              ← Dynamic vehicle rendering, filtering & WhatsApp handling
 │   └── images/
-│       ├── hero-bg.jpg
-│       ├── motor-spares.jpg
-│       ├── accident-vehicles.jpg
-│       ├── engine-rebuilding.jpg
-│       └── motorcycle-servicing.jpg
-├── OWNER-EDITING-GUIDE.md      ← How to update the website
-└── README.md                   ← This file
+│       ├── hero-bg.webp / .jpg
+│       ├── services/
+│       │   ├── shipping-transport.webp / .jpg
+│       │   ├── towing-recovery.webp / .jpg
+│       │   ├── sell-your-car.webp / .jpg
+│       │   └── african-mechanic.webp / .jpg
+│       └── vehicles/
+│           ├── corolla.webp / .jpg
+│           ├── hilux.webp / .jpg
+│           ├── rav4.webp / .jpg
+│           ├── honda-fit.webp / .jpg
+│           ├── fielder.webp / .jpg
+│           └── polo.webp / .jpg
+├── OWNER-EDITING-GUIDE.md       ← Step-by-step owner maintenance instructions
+└── README.md                    ← Project documentation
 ```
 
-## How to Update Content
+---
 
-See **[OWNER-EDITING-GUIDE.md](OWNER-EDITING-GUIDE.md)** for step-by-step instructions.
+## Owner Guides & Updating Content
 
-The quick version: edit `src/data/business.js` on GitHub to change the phone number, email, services, headlines, and other business information.
+- **Updating Stock or Prices:** See **[OWNER-EDITING-GUIDE.md](OWNER-EDITING-GUIDE.md)** for instructions on using `owner.html` or editing `src/data/vehicles.js`.
+- **Updating Business Contact Info:** Edit `src/data/business.js`.
 
-## Deploying to GitHub Pages
+---
 
-1. Push this repository to GitHub (e.g. as `hus-motors`).
-2. Go to **Settings → Pages**.
-3. Under "Source", select **Deploy from a branch**.
-4. Choose `main` branch and `/ (root)` folder.
-5. Click **Save**.
-6. Your site will be live at `https://YOUR-USERNAME.github.io/hus-motors/` within 1–2 minutes.
+## Domain & Production Setup
 
-## Security Notes
+- **Recommended Domain:** `husmotors.co.zw` (~$3 to $10/year through ZISPA registrars such as Webdev, Webzim, Tremhost).
+- **Configuration:** Set DNS A records to GitHub Pages IPs (`185.199.108.153`, etc.) and point CNAME `www` to `tendaiernest630-boop.github.io`.
 
-- No backend, database, or server-side code
-- No API keys or credentials in the codebase
-- No third-party tracking scripts
-- No cookies or local storage
-- Form submissions are handled client-side — the visitor completes the send action in WhatsApp or their email app
-- No customer data is stored in the repository
-- All external links use `rel="noopener noreferrer"`
-
-This is a static site hosted on GitHub Pages. GitHub Pages does not support custom server headers (such as Content-Security-Policy). The site is as secure as a static HTML site can be on this platform, but it is not "unhackable" — no website is.
-
-## Custom Domain (Optional)
-
-To use a custom domain like `husmotors.co.zw`:
-
-1. Purchase the domain from a registrar.
-2. In your repository, go to **Settings → Pages**.
-3. Enter your custom domain.
-4. Set up DNS records as instructed by GitHub.
-5. The site will work at both the GitHub Pages URL and your custom domain.
-
-This is optional and costs money. The site works perfectly on the free GitHub Pages URL.
+---
 
 ## Licence
 
-This website was built for HUS MOTORS. All rights reserved.
+Built for HUS MOTORS. All rights reserved.

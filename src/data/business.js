@@ -2,15 +2,9 @@
  * ============================================================
  *  HUS MOTORS — CENTRAL BUSINESS CONFIGURATION
  * ============================================================
- *  This is the ONLY file you need to edit to update your
- *  business details across the entire website.
- *
- *  HOW TO EDIT:
- *  1. Open this file on GitHub.
- *  2. Click the pencil (✏️) icon to edit.
- *  3. Change the text between the quotation marks.
- *  4. Click "Commit changes" to save.
- *  5. Wait 1–2 minutes for the website to update.
+ *  This file contains the central business information, contact
+ *  details, and services. Edit this file directly or via GitHub
+ *  to update information across the entire website.
  * ============================================================
  */
 
@@ -18,154 +12,192 @@ const BUSINESS = {
 
   /* ── Business Identity ─────────────────────────────── */
   name: "HUS MOTORS",
-  tagline: "Automotive Solutions. Parts You Need. Service You Can Trust.",
+  tagline: "Quality Vehicles. Reliable Service. Practical Automotive Help.",
   shortDescription:
-    "Motor spares, engine rebuilding, motorcycle servicing, key programming, and more — one enquiry away.",
+    "Vehicle sales, shipping and transportation, help selling your car, towing and recovery, plus original motor spares and mechanical repairs in Zimbabwe.",
 
   /* ── Contact Details ───────────────────────────────── */
   phone: "0778891162",
-  // NOTE: Update this to the correct international format
-  // once confirmed, e.g. "+263778891162"
+  phoneDisplay: "+263 77 889 1162",
   whatsappNumber: "263778891162",
   email: "Pridetakudzwa74@gmail.com",
 
-  /* ── Location (update once confirmed) ──────────────── */
-  address: "",          // e.g. "123 Example Road, Harare"
-  city: "",             // e.g. "Harare"
+  /* ── Location ──────────────────────────────────────── */
+  city: "Harare",
   country: "Zimbabwe",
+  addressNote: "Direct enquiries via WhatsApp and phone. Physical premises details supplied upon appointment.",
 
-  /* ── Opening Hours (update once confirmed) ─────────── */
-  openingHours: "",     // e.g. "Mon–Fri 8 AM – 5 PM, Sat 8 AM – 1 PM"
+  /* ── Opening Hours ─────────────────────────────────── */
+  openingHours: "Mon – Fri: 8:00 AM – 5:00 PM | Sat: 8:00 AM – 1:00 PM",
+  emergencyNote: "Towing and recovery assistance available on call.",
 
   /* ── Homepage Hero ─────────────────────────────────── */
-  heroHeadline: "Automotive Solutions. Parts You Need. Service You Can Trust.",
+  heroHeadline: "Reliable Vehicles. Honest Service. Real Automotive Help.",
   heroSubheadline:
-    "From original motor spares to engine rebuilding, motorcycle servicing to key programming — HUS MOTORS is your direct line to practical automotive help.",
+    "From verified everyday vehicles and cross-border shipping to towing assistance, help selling your car, and original motor spares — HUS MOTORS gives you straightforward automotive solutions in Zimbabwe.",
   heroPrimaryCTA: "WhatsApp Us",
-  heroSecondaryCTA: "View Our Services",
+  heroSecondaryCTA: "Browse Vehicles",
+  heroTertiaryCTA: "Our Services",
 
   /* ── About Section ─────────────────────────────────── */
   aboutHeading: "About HUS MOTORS",
   aboutText:
-    "HUS MOTORS is an automotive service and motor-spares business offering a focused range of practical vehicle solutions. We sell new and used original motor spares, buy accident-damaged vehicles, rebuild and repair engines, service motorcycles, programme vehicle keys, refuel air-conditioning systems, and charge batteries. Our goal is to make it easy for vehicle owners to find the parts and services they need through direct, transparent communication.",
+    "HUS MOTORS is a Zimbabwean automotive business built around practical solutions, fair market pricing, and transparent, personal service. Whether you are looking to purchase a clean everyday vehicle, ship a car from the port, sell your current vehicle, recover a broken-down car, or find reliable motor spares, we are here to help.",
+  aboutSubtext:
+    "We cater to everyday commuters, families, and commercial drivers across Zimbabwe. No inflated showroom markups, no misleading vehicle promises — just honest, straightforward automotive service you can approach with confidence.",
 
-  /* ── Why Contact Us Section ────────────────────────── */
-  whyHeading: "Why Contact HUS MOTORS?",
-  whyPoints: [
+  /* ── Four Core Pillars ─────────────────────────────── */
+  pillars: [
     {
-      title: "Direct Communication",
-      description:
-        "Speak directly with the business — no call centres or automated menus. Ask your question and get a straightforward answer.",
-      icon: "chat",
+      title: "Direct Personal Contact",
+      description: "Chat or speak directly with the team on WhatsApp or phone. No call centres or automated menus — just clear, fast answers.",
+      icon: "chat"
     },
     {
-      title: "Practical Automotive Knowledge",
-      description:
-        "Get help identifying the right parts or services for your vehicle. We deal with real engines, real spares, and real repairs every day.",
-      icon: "wrench",
+      title: "Fair Market Pricing",
+      description: "We price vehicles, services, and parts at reasonable market levels so ordinary customers and families get genuine value.",
+      icon: "tag"
     },
     {
-      title: "Multiple Services, One Contact",
-      description:
-        "Whether you need a spare part, an engine rebuild, motorcycle servicing, or key programming — one enquiry can cover it all.",
-      icon: "layers",
+      title: "Inspected & Verified Stock",
+      description: "Every vehicle we offer is honestly described with verified mechanical condition, mileage, and documentation.",
+      icon: "shield"
     },
     {
-      title: "Transparent Process",
-      description:
-        "We explain what we can help with and what we cannot. No hidden charges, no pressure — just clear information so you can decide.",
-      icon: "shield",
-    },
+      title: "Complete Automotive Support",
+      description: "From purchasing and shipping to breakdown recovery and spare parts, you have one trusted point of contact for your vehicle.",
+      icon: "layers"
+    }
   ],
 
-  /* ── Final CTA Section ─────────────────────────────── */
-  ctaHeading: "Ready to Get Started?",
+  /* ── Core Services (The 4 Main Business Services) ──── */
+  coreServices: [
+    {
+      id: "vehicle-sales",
+      title: "Vehicle Sales",
+      subtitle: "Clean, Verified Everyday Vehicles",
+      badge: "Popular Market",
+      description:
+        "We offer clean, well-maintained everyday sedans, hatchbacks, family wagons, medium SUVs, and double-cab pickups suited for Zimbabwean roads. Every vehicle is inspected, honestly presented with clear details, and ready for you to view or enquire about.",
+      highlights: [
+        "Everyday sedans, practical hatchbacks & family SUVs",
+        "Rugged double-cab pickups for work and family",
+        "Transparent condition reports & realistic pricing",
+        "Custom vehicle sourcing upon request"
+      ],
+      image: "assets/images/vehicles/corolla.webp",
+      imageFallback: "assets/images/vehicles/corolla.jpg",
+      icon: "car",
+      ctaText: "Browse Vehicles",
+      ctaLink: "#vehicles",
+      whatsappMessage:
+        "Hello HUS MOTORS, I am interested in purchasing a vehicle. I would like to know what is currently available."
+    },
+    {
+      id: "vehicle-shipping",
+      title: "Vehicle Shipping & Transportation",
+      subtitle: "Safe Transit From Port to Doorstep",
+      badge: "Logistics",
+      description:
+        "Need a vehicle transported or cleared? HUS MOTORS assists customers with reliable vehicle shipping and transportation — whether moving vehicles across towns or coordinating transport from regional ports (Durban, Walvis Bay, Beira) into Harare and Bulawayo.",
+      highlights: [
+        "Port-to-Harare / Bulawayo transit coordination",
+        "Cross-border vehicle transport assistance",
+        "Professional carrier handling to prevent transit damage",
+        "Clear communication and tracking updates"
+      ],
+      image: "assets/images/services/shipping-transport.webp",
+      imageFallback: "assets/images/services/shipping-transport.jpg",
+      icon: "truck",
+      ctaText: "Enquire About Shipping",
+      ctaLink: "#contact",
+      whatsappMessage:
+        "Hello HUS MOTORS, I need assistance with vehicle shipping and transportation. Here are the details of the vehicle and route:"
+    },
+    {
+      id: "sell-your-car",
+      title: "Help Selling Your Vehicle",
+      subtitle: "Hassle-Free Marketing to Serious Buyers",
+      badge: "Fast Sale",
+      description:
+        "Selling a car can be stressful with endless calls and tyre-kickers. HUS MOTORS assists vehicle owners by presenting and marketing their cars to genuine buyers at fair market value. Reach out with your car details and photos to get started.",
+      highlights: [
+        "Assistance connecting your vehicle with ready buyers",
+        "Help presenting photos and accurate vehicle specifications",
+        "Fair market valuation advice based on current Zimbabwean market",
+        "Simple enquiry process with no upfront complicated obligations"
+      ],
+      image: "assets/images/services/sell-your-car.webp",
+      imageFallback: "assets/images/services/sell-your-car.jpg",
+      icon: "handshake",
+      ctaText: "Sell Your Car With Us",
+      ctaLink: "#contact",
+      whatsappMessage:
+        "Hello HUS MOTORS, I would like assistance selling my vehicle. Here are the details (make, model, year, condition, price):"
+    },
+    {
+      id: "towing-recovery",
+      title: "Towing & Roadside Recovery",
+      subtitle: "Prompt Flatbed Recovery When You Need Help",
+      badge: "Roadside Help",
+      description:
+        "Broken down or developed mechanical trouble? HUS MOTORS provides towing and recovery assistance for disabled vehicles, runners, and non-runners. Prompts, professional recovery to get your vehicle safely to a workshop or your home.",
+      highlights: [
+        "Flatbed towing for cars, SUVs, and light commercials",
+        "Assistance with mechanical breakdown and recovery",
+        "Accident-damaged vehicle collection and transport",
+        "Direct telephone line for prompt dispatch"
+      ],
+      image: "assets/images/services/towing-recovery.webp",
+      imageFallback: "assets/images/services/towing-recovery.jpg",
+      icon: "tow",
+      ctaText: "Request Towing",
+      ctaLink: "#contact",
+      whatsappMessage:
+        "Hello HUS MOTORS, I need towing and roadside recovery assistance. My current location and vehicle are:"
+    }
+  ],
+
+  /* ── Additional Workshop & Spares Services ─────────── */
+  workshopServices: [
+    {
+      id: "spares",
+      title: "New & Used Original Motor Spares",
+      description: "Genuine new and tested used motor spares for popular Toyota, Honda, Nissan, VW, and other makes.",
+      icon: "cog"
+    },
+    {
+      id: "engine-work",
+      title: "Engine Rebuilding & Diagnostics",
+      description: "Engine assessments, head-gasket replacements, overhaul diagnostics, and mechanical rebuilding.",
+      icon: "wrench"
+    },
+    {
+      id: "motorcycle",
+      title: "Motorcycle Servicing",
+      description: "Routine servicing, oil changes, brake adjustments, and tune-ups for delivery bikes and private motorcycles.",
+      icon: "motorcycle"
+    },
+    {
+      id: "keys-aircon-battery",
+      title: "Key Programming, AC Regas & Batteries",
+      description: "Transponder key programming, vehicle aircon refuelling/regas, and battery diagnostic testing.",
+      icon: "key"
+    }
+  ],
+
+  /* ── Final Call to Action ──────────────────────────── */
+  ctaHeading: "Ready to Discuss Your Automotive Needs?",
   ctaText:
-    "Whether you are looking for a specific motor spare, need an engine assessment, want to sell an accident-damaged vehicle, or require any of our automotive services — reach out to HUS MOTORS today.",
-  ctaButtonText: "Send Us a WhatsApp Message",
+    "Whether you are looking to buy a clean vehicle, arrange shipping, sell your car, request towing, or locate a specific spare part — contact HUS MOTORS today. One message gets you an immediate, honest response.",
+  ctaButtonText: "Message HUS MOTORS on WhatsApp",
 
   /* ── Footer ────────────────────────────────────────── */
-  footerNote: "HUS MOTORS — Automotive Service & Motor Spares",
-  copyrightYear: "2024",
-
-  /* ── Services ──────────────────────────────────────── */
-  services: [
-    {
-      id: "motor-spares",
-      title: "New & Used Original Motor Spares",
-      shortTitle: "Motor Spares",
-      description:
-        "HUS MOTORS sells new and used original motor spares. If you are looking for a specific part, get in touch with your vehicle details and we will let you know what is available. Availability varies — enquire to check stock for your make and model.",
-      icon: "cog",
-      image: "motor-spares.webp",
-      whatsappMessage:
-        "Hello HUS MOTORS, I am enquiring about motor spares. I need a part for my vehicle — here are the details:",
-    },
-    {
-      id: "accident-vehicles",
-      title: "Accident-Damaged Vehicle Purchases",
-      shortTitle: "We Buy Damaged Vehicles",
-      description:
-        'HUS MOTORS buys accident-damaged vehicles — "runners and non-runners." If you have a damaged vehicle you would like to sell, contact us with the vehicle details, condition, and photos if possible.',
-      icon: "car-crash",
-      image: "accident-vehicles.webp",
-      whatsappMessage:
-        "Hello HUS MOTORS, I have an accident-damaged vehicle I would like to sell. Here are the details:",
-    },
-    {
-      id: "engine-rebuilding",
-      title: "Engine Rebuilding & Repairs",
-      shortTitle: "Engine Work",
-      description:
-        "HUS MOTORS offers engine dismantling, rebuilding, and repair services. If your engine needs attention — whether it is a knock, overheating, loss of power, or a full rebuild — get in touch to discuss the work involved.",
-      icon: "engine",
-      image: "engine-rebuilding.webp",
-      whatsappMessage:
-        "Hello HUS MOTORS, I need help with engine rebuilding or repairs. My vehicle details are:",
-    },
-    {
-      id: "motorcycle-servicing",
-      title: "Motorcycle Servicing",
-      shortTitle: "Motorcycle Service",
-      description:
-        "HUS MOTORS provides motorcycle servicing. Whether your motorcycle needs a routine service, a specific repair, or a check-up, reach out with the make, model, and what you need.",
-      icon: "motorcycle",
-      image: "motorcycle-servicing.webp",
-      whatsappMessage:
-        "Hello HUS MOTORS, I need motorcycle servicing. My motorcycle details are:",
-    },
-    {
-      id: "key-programming",
-      title: "Key Programming",
-      shortTitle: "Key Programming",
-      description:
-        "HUS MOTORS offers vehicle key-programming services. If you need a key programmed, contact us with your vehicle make, model, and year so we can advise whether we can assist with your particular vehicle.",
-      icon: "key",
-      image: "key-programming.webp",
-      whatsappMessage:
-        "Hello HUS MOTORS, I need key programming for my vehicle. The details are:",
-    },
-    {
-      id: "aircon-refuelling",
-      title: "Air-Conditioning Refuelling",
-      shortTitle: "Aircon Refuelling",
-      description:
-        "HUS MOTORS provides air-conditioning refuelling for vehicles. If your vehicle's aircon is not cooling properly, get in touch and we can arrange a refuelling service.",
-      icon: "snowflake",
-      image: "aircon-refuelling.webp",
-      whatsappMessage:
-        "Hello HUS MOTORS, I need air-conditioning refuelling for my vehicle. The details are:",
-    },
-    {
-      id: "battery-charging",
-      title: "Battery Charging",
-      shortTitle: "Battery Charging",
-      description:
-        "HUS MOTORS offers battery-charging services. If your vehicle battery is flat or not holding charge, contact us to arrange a charge or discuss your battery needs.",
-      icon: "battery",
-      image: "battery-charging.webp",
-      whatsappMessage:
-        "Hello HUS MOTORS, I need battery charging for my vehicle. The details are:",
-    },
-  ],
+  footerNote: "HUS MOTORS — Automotive Solutions, Vehicle Sales, Shipping & Spares",
+  copyrightYear: "2026"
 };
+
+// Export for Node/CommonJS environments if needed
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = BUSINESS;
+}

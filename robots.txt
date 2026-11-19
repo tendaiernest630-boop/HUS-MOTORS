@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /owner.html
+Disallow: /scratch/
 
-# HUS MOTORS Website
-# Sitemap will be added once the production URL is confirmed.
+# Sitemap location
+Sitemap: https://husmotors.co.zw/sitemap.xml
