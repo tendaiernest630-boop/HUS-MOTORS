@@ -1,7 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /owner.html
-Disallow: /scratch/
 
-# Sitemap location
-Sitemap: https://pridetakudzwa74.github.io/sitemap.xml
+Sitemap: https://pridetakudzwa74-creator.github.io/sitemap.xml

@@ -21,7 +21,7 @@ You have two convenient ways to update vehicle stock:
 
 ### Method A — Using the Visual Owner Portal (`owner.html`) ⭐ (Recommended)
 
-1. Open `owner.html` in your web browser (or navigate to `https://pridetakudzwa74.github.io/owner.html` or your current live URL).
+1. Open `owner.html` in your web browser (or navigate to `https://pridetakudzwa74-creator.github.io/owner.html` or your current live URL).
 2. Enter your Owner Passcode (default: **`2630`**).
 3. On the dashboard, you can:
    - **Change Availability:** Use the dropdown on any vehicle to toggle between **Available**, **Reserved / In Transit**, or **Sold**.
@@ -138,7 +138,7 @@ Once you purchase `husmotors.co.zw` from your registrar:
    - `185.199.110.153`
    - `185.199.111.153`
 2. Add a **CNAME Record** for `www` pointing to:
-   `pridetakudzwa74.github.io` (or your active GitHub Pages username)
+   `pridetakudzwa74-creator.github.io` (or your active GitHub Pages username)
 3. In your GitHub repository:
    - Create a file in the root folder named `CNAME`.
    - Put `husmotors.co.zw` on the first line and save.

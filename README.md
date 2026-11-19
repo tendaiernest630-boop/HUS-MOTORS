@@ -92,7 +92,7 @@ HUS MOTORS/
 ## Domain & Production Setup
 
 - **Recommended Domain:** `husmotors.co.zw` (~$3 to $10/year through ZISPA registrars such as Webdev, Webzim, Tremhost).
-- **Configuration:** Set DNS A records to GitHub Pages IPs (`185.199.108.153`, etc.) and point CNAME `www` to `pridetakudzwa74.github.io`.
+- **Configuration:** Set DNS A records to GitHub Pages IPs (`185.199.108.153`, etc.) and point CNAME `www` to `pridetakudzwa74-creator.github.io`.
 
 ---
 
